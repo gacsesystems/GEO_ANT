@@ -1,0 +1,41 @@
+﻿body {
+}
+
+input[type=checkbox]:not(old),
+input[type=radio ]:not(old) {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+    input[type=checkbox]:not(old) + label,
+    input[type=checkbox]:not(old) + a {
+        display: inline-block;
+        padding-left: 34px;
+        background: url('../Images/switch_off_32g.png') no-repeat 0 0;
+        line-height: 32px;
+        transition: ease-in 0.1s;
+    }
+
+    input[type=radio ]:not(old) + label {
+        display: inline-block;
+        padding-left: 34px;
+        background: url('../Images/radio_off_32.png') no-repeat 0 0;
+        line-height: 32px;
+    }
+
+input[type=checkbox]:checked:not(old) + label,
+input[type=checkbox]:checked:not(old) + a {
+    display: inline-block;
+    padding-left: 34px;
+    background: url('../Images/switch_on_32.png') no-repeat 0 0;
+    line-height: 32px;
+    transition: ease-in 0.1s;
+}
+
+input[type=radio]:not(old):checked + label {
+    display: inline-block;
+    padding-left: 34px;
+    background: url('../Images/radio_on_32.png') no-repeat 0 0;
+    line-height: 32px;
+}

@@ -1,0 +1,58 @@
+﻿
+
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Survey.Master.vb" Inherits="GEO.Survey" %>
+
+<%@ Import Namespace="GEO" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><%: Page.Title %> - <%: Definiciones.AppShortName %></title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="SurveyHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="SurveyMasterForm" runat="server" >
+        <asp:ScriptManager runat="server" EnablePartialRendering="true" AsyncPostBackTimeout="300" AjaxFrameworkMode="Enabled">
+        </asp:ScriptManager>
+
+        <%----------------------------   HEADER  --------------------------------------------------------------------------------------------%>
+        <asp:Panel runat="server" CssClass="HeaderBarMainSurvey" DefaultButton="">
+            <asp:Table ID="tblMainMasterHeader" runat="server" Width="100%" >
+                <asp:TableRow Width="100%" VerticalAlign="Middle">
+                    <asp:TableCell Width="80px" CssClass="imgLogo" HorizontalAlign="Center" VerticalAlign="Middle" >
+                        <asp:Image ID="imgClientLogo" runat="server" ImageUrl="~/Images/gSystems_w32.png" Width="64px" Height="64px"/>
+                    </asp:TableCell>
+                    <asp:TableCell Width="100%" HorizontalAlign="Center">
+                        <asp:Label ID="lblAppTitle" runat="server" Text="" CssClass="AppTitle"></asp:Label>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </asp:Panel>
+
+        <asp:Table ID="tblSurveyContent" runat="server" Width="100% " CssClass="ColorWorkSpace MainSystemContent">
+            <asp:TableRow Width="100%">
+                <asp:TableCell Width="100%" CssClass="WorkSpaceWidth SurveyHeaderMargin" VerticalAlign="Top">
+                    <%----------------------------   CONTENT  -------------------------------------------------------------------------------%>
+
+                        <asp:ContentPlaceHolder ID="SurveyContent" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                        <%----------------------------   FOOTER  ----------------------------------------------------------------------------%>
+                        <footer class="text-footer ColorWorkSpace">
+                            <hr />
+                            <asp:Label ID="lblCopyright" runat="server" ><%: Definiciones.AppName %> - <%: Definiciones.AppCopyright %> (<%: Definiciones.GetVersionAssembly %>) &nbsp; </asp:Label>
+                        </footer>
+
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+
+    </form>
+</body>
+</html>

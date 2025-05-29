@@ -1,0 +1,174 @@
+﻿
+
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="GEO.Site" %>
+
+<%@ Import Namespace="GEO" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><%: Page.Title %> - <%: Definiciones.AppShortName %></title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="MainMasterForm" runat="server" >
+        <asp:ScriptManager runat="server" EnablePartialRendering="true" AsyncPostBackTimeout="300" AjaxFrameworkMode="Enabled">
+        </asp:ScriptManager>
+
+        <%----------------------------   Show Variables  ------------------------------------------------------------------------------------%>
+        <asp:Panel runat="server" ID="pnlShowVariables" Visible="false"  >
+            <asp:Table runat="server" >
+                <asp:TableRow>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">piUserSigned=<%: VariablesSesion.piUserSigned %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">psUserIdSigned=<%: VariablesSesion.psUserIdSigned %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">psUserName=<%: VariablesSesion.psUserName %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">psNombreUsuario=<%: VariablesSesion.psNombreUsuario %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">viIdUsuario=<%: VariablesSesion.viIdUsuario %></asp:Label>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">piIdRol=<%: VariablesSesion.piIdRol %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">psRolDescription=<%: VariablesSesion.psRolDescription %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">psImageRol=<%: VariablesSesion.psImageRol %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">psHome=<%: VariablesSesion.psHome %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text=""></asp:Label>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">piIdEntityBusiness=<%: VariablesSesion.piIdEntityBusiness %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">viIdCliente=<%: VariablesSesion.viIdCliente %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">piUserIdCliente=<%: VariablesSesion.piUserIdCliente %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">psEntityBusinessName=<%: VariablesSesion.psEntityBusinessName %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">piUserIdClienteSelected=<%: VariablesSesion.piUserIdClienteSelected %></asp:Label>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">piIdEncuesta=<%: VariablesSesion.piIdEncuesta %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <asp:Label runat="server" Text="">psBackURL=<%: VariablesSesion.psBackURL %></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <%--<asp:Label runat="server" Text="">piUserIdCliente=<%: VariablesSesion.piUserIdCliente %></asp:Label>--%>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <%--<asp:Label runat="server" Text="">psEntityBusinessName=<%: VariablesSesion.psEntityBusinessName %></asp:Label>--%>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="SystemShowVariables">
+                        <%--<asp:Label runat="server" Text="">piUserIdClienteSelected=<%: VariablesSesion.piUserIdClienteSelected %></asp:Label>--%>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </asp:Panel>
+
+        <%----------------------------   HEADER  --------------------------------------------------------------------------------------------%>
+        <asp:Panel runat="server" CssClass="HeaderBarMain" DefaultButton="">
+            <asp:Table ID="tblMainMasterHeader" runat="server" Width="100%" >
+                <asp:TableRow Width="100%" VerticalAlign="Middle">
+                    <asp:TableCell Width="80px" CssClass="imgLogo" HorizontalAlign="Center"  VerticalAlign="Middle">
+                        <asp:Image ID="imgGSystemsLogo" runat="server" ImageUrl="~/Images/gSystems_w32.png" />
+                        <%--<asp:Image ID="imgApplicationLogo" runat="server" ImageUrl="~/Images/home32.png" />--%>
+                        <asp:ImageButton ID="btnApplicationLogo" runat="server" ImageUrl="~/Images/home32.png" PostBackUrl="~/Home.aspx" />
+                        <asp:LinkButton runat="server" ID="btnHomeTitleLink" Text="INICIO" CssClass="HomeTitle SaltoLinea" PostBackUrl="~/Home.aspx" Font-Underline="false"></asp:LinkButton>
+                    </asp:TableCell>
+                    <asp:TableCell VerticalAlign="Middle">
+                        <asp:Button runat="server" ID="btnRegresar" Text="R e g r e s a r" CssClass="botonRegresar" Visible="false" />
+                    </asp:TableCell>
+                    <asp:TableCell Width="100%" >
+                        <asp:Table runat="server" Width="100%">
+                            <asp:TableRow>
+                                <asp:TableCell HorizontalAlign="Left">&nbsp;
+                                    <%--<asp:Label ID="lblAppName" runat="server" Text="" CssClass="AppName"><%: Definiciones.AppName %></asp:Label>--%>
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell HorizontalAlign="Center">
+                                    <%--<asp:Label ID="lblAppTitle" runat="server" Text="" CssClass="AppTitle"><%: VariablesSesion.psMainTitle %></asp:Label>--%>
+                                    <asp:Label ID="lblAppTitle" runat="server" Text="" CssClass="AppTitle"></asp:Label>
+                                </asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </asp:TableCell>
+                    <asp:TableCell >
+                        <asp:Table ID="tblUserInfo" runat="server">
+                            <asp:TableRow >
+                                <asp:TableCell CssClass="UserInfoContent" HorizontalAlign="Center"> 
+                                    <asp:Image ID="imgUserInfo" runat="server" ImageUrl="~/Images/generic_user.png" ToolTip="" CssClass="UserInfoImage" />
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell CssClass="UserName" HorizontalAlign="Center">
+                                    <asp:Label ID="lblNombreUsuario" runat="server" Text="" ><%: VariablesSesion.psNombreUsuario %></asp:Label>
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell HorizontalAlign="Center">
+                                    <asp:ImageButton runat="server" ID="btnSalirSistema" ImageUrl="~/Images/BotonSalir.png" />
+                                </asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </asp:Panel>
+
+        <asp:Table ID="tblMainSystemContent" runat="server" Width="100% " CssClass="ColorWorkSpace MainSystemContent">
+            <asp:TableRow>
+                <asp:TableCell Width="100%" CssClass="main-container WorkSpaceWidth HeaderPosition MainHeaderMargin" VerticalAlign="Top">
+                    <%----------------------------   CONTENT  -------------------------------------------------------------------------------%>
+<%--                    <asp:Panel ID="pnlMainMasterContent" runat="server" >--%>
+                        <%--body-content--%>
+
+<%--                        <span class="ir-arriba">
+                            <asp:Image runat="server" ImageUrl="~/Images/arrow_up_24b.png" />
+                        </span>--%>
+
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                        <%----------------------------   FOOTER  ----------------------------------------------------------------------------%>
+                        <footer class="text-footer ColorWorkSpace">
+                            <hr />
+                            <asp:Label ID="lblCopyright" runat="server" ><%: Definiciones.AppName %> - <%: Definiciones.AppCopyright %> (<%: Definiciones.GetVersionAssembly %>) &nbsp; </asp:Label>
+                        </footer>
+<%--                    </asp:Panel>--%>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,1443 @@
+﻿/*--------------------------------------------------------------------------------------------------------------------*/
+/*Fuentes*/
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('../fonts/Avenir-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('../fonts/Avenir-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir-LightOblique';
+    src: url('../fonts/Avenir-LightOblique.ttf') format('truetype');
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*
+    Pantone:
+
+    1) #15181E
+    2) #A4A4A4
+    3) #EDF0F4
+    4) #D62159
+
+*/
+
+.PaletaNegro {
+    background-color: #15181E;
+}
+
+.PaletaGris {
+    background-color: #A4A4A4;
+}
+
+.PaletaGrisClaro {
+    background-color: #EDF0F4;
+}
+
+.PaletaRosa {
+    background-color: #D62159;
+}
+
+html {
+ }
+
+body {
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+
+
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input[type=text]
+{
+    max-width: 99%;
+    min-width: 99%;
+}
+
+textarea {
+    overflow: scroll;
+    resize: none;
+    min-width: 99%;
+}*/
+
+.flex-container {
+    display: flex!important;
+    flex-wrap: nowrap;
+}
+
+.text100 {
+    max-width: 99%;
+    min-width: 99%;
+}
+
+.textarea100 {
+    overflow: scroll;
+    resize: none;
+    min-width: 99%;
+}
+
+.SystemShowVariables {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    padding: 2px;
+    color: darkblue;
+    background-color: white;
+    align-content: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.TapizFondo {
+    background-image: linear-gradient(to right, #15181E, #A4A4A4, #EDF0F4, #D62159);
+}
+
+.HeaderBarMain {
+    background-color: #15181E;
+    color: white;
+    /*height: auto;
+    padding: 16px;*/
+
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición */
+    min-height: 140px;
+    max-height: 140px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    z-index: 2000;
+}
+
+.HeaderBarMainSurvey {
+    background-color: #15181E;
+    color: white;
+    height: auto;
+    padding: 16px 0px 16px 0px;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición */
+    min-height: 96px;
+    max-height: 96px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    z-index: 2000;
+}
+
+.MainHeaderMargin {
+    position: absolute;
+    top: 141px;
+    left: 0px;
+}
+
+.SurveyHeaderMargin {
+    position: absolute;
+    top: 97px;
+    left: 0px;
+}
+
+.ColorWorkSpace {
+    background-color: white;
+}
+
+.MainSystemContent {
+    padding-top: 20px;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0; /* Posicionamos la cabecera pegada arriba */
+}
+
+.WorkSpaceWidth {
+    width: 100%;
+}
+
+.AppName {
+    font-family: Avenir;
+    color: #D62159;
+    font-size: 48px;
+}
+
+.AppTitle {
+    font-family: Avenir-Black;
+    color: #D62159;
+    font-size: 40px;
+}
+
+.AppSubTitle {
+    font-family: Avenir-Black;
+    color: #D62159;
+    font-size: 36px;
+}
+
+.HomeTitle {
+    font-family: Avenir-Black;
+    font-size: 21px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.imgLogo {
+    vertical-align: central;
+}
+
+.UserInfoContent {
+
+}
+
+.UserInfoImage {
+}
+
+.UserName {
+    font-family: Avenir-LightOblique;
+    font-size: 12px;
+}
+
+.text-footer {
+    font-family: Avenir-LightOblique;
+    font-size: 12px;
+    color: #A4A4A4;
+    text-align: right;
+}
+
+.ir-arriba {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    color: #fff;
+    position: fixed;
+    font-size: 10px;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+    z-index: 1050;
+    align-items: center;
+    vertical-align: middle;
+    border-color: silver;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    opacity: .6;
+    -moz-opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.MenuTitle {
+    color: #15181E;
+    font-family: Avenir-Black;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.MenuTitleContent {
+    margin: 0px;
+}
+
+.MenuSubTitle {
+    color: #D62159;
+    font-family: Avenir-Black;
+    font-size: 24px;
+}
+
+.MenuBarContent {
+    background-color: #EDF0F4;
+    padding: 32px 8px 32px 8px;
+}
+
+.MenuBarTitle {
+    color: #D62159;
+    font-family: Avenir-Black;
+    font-size: 24px;
+    border-style: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.MenuBarSubTitle {
+    color: #A4A4A4;
+    font-family: Avenir-Light;
+    font-size: 16px;
+}
+
+.MenuBarButton {
+    position: fixed;
+    display: normal;
+    float: left;
+    padding: 2px;
+    background-color: transparent;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.NoBorder {
+    border-style: none!important;
+}
+
+.BorderLightGray {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #EDF0F4;
+}
+
+.LineDashLightGray {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #EDF0F4;
+}
+
+.VerticalSpace {
+    /*padding: 32px 0px 0px 0px;*/
+    margin: 32px 0px 0px 0px;
+}
+
+.VerticalSpace16 {
+    margin: 16px 0px 0px 0px;
+}
+
+.SaltoLinea {
+    display: block;
+}
+
+.TopPadding8 {
+    padding: 8px 0px 0px 0px;
+}
+
+.LeftPadding8 {
+    padding: 0px 0px 0px 8px;
+}
+
+.RightPadding8 {
+    padding: 0px 8px 0px 0px;
+}
+
+.BottomPadding8 {
+    padding: 0px 0px 8px 0px;
+}
+
+.TopRightPadding8 {
+    padding: 8px 8px 0px 0px;
+}
+
+.BottomLeftPadding8 {
+    padding: 0px 0px 8px 8px;
+}
+
+.TopRightPadding4 {
+    padding: 4px 4px 0px 0px;
+}
+
+.BottomLeftPadding4 {
+    padding: 0px 0px 4px 4px;
+}
+
+.FiltrarContent {
+    border-style: solid;
+    border-left-style: none;
+    border-width: 1px;
+    border-color: #A4A4A4;
+    padding: 1px;
+}
+
+.FiltrarButton {
+    padding: 0px 4px 0px 4px;
+}
+
+.FiltrarLabel {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    color: white;
+    background-color: #A4A4A4;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #A4A4A4;
+    padding: 2px 8px 2px 8px;
+}
+
+.FiltrarText {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    color: #A4A4A4;
+    background-color: white;
+    border-style: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Grids Datos */
+
+.GridStyleContainer {
+    background-color: white;
+    border-color: #D62159;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px;
+    font-family: Avenir-Light;
+    position: relative;
+    top: 8px;
+}
+
+.GridStyle {
+    font-family: Avenir-Light;
+    font-size: 12px;
+    width: 100%;
+    background-color: white;
+}
+
+.GridHeaderStyle {
+    Height: 40px;
+    background-color: #D62159;
+    border-color: #D62159;
+    color: white;
+    text-align: left;
+    padding-left: 4px;
+}
+
+.GridRowStyle {
+    Height: 30px;
+    /*background-color: white;
+    border-bottom: solid;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-color: white;*/
+    background-color: white;
+    color: #15181E;
+    text-align: left;
+    padding: 2px;
+    border-color: transparent;
+}
+
+.BorderRow {
+    /*border-bottom: solid;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: #A4A4A4;
+    border-bottom-width: 1px;
+    -moz-border-end-width: 2px;
+    -moz-border-start-width: 2px;
+    -moz-border-bottom-colors: #A4A4A4;
+    /*border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;*/
+}
+
+.GridSelectedRowStyle {
+    font-weight: bolder;
+    background-color: white !important;
+    /*opacity: .75;
+    -moz-opacity: 0.75;
+    filter: alpha(opacity=75);*/
+}
+
+.GridAlternateRow {
+    background-color: #A4A4A4; /*#E6E6E6;*/
+    color: white;
+    border-color: transparent;
+}
+
+.GridEmptyDataRowStyle {
+    font-family: Avenir-LightOblique;
+    padding: 4px;
+    border-style: solid;
+    border-color: transparent;
+    margin: 4px;
+    height: 40px;
+    color: #D62159!important;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.GridPagerTextBlock {
+    border: solid;
+    border-color: transparent;
+}
+
+.GridPagerTextBlock span {
+    color: white;
+    background-color: #D62159 !important;
+    display: block !important;
+    font-weight: normal;
+    Font-Size: small;
+    font-style: normal;
+    font-weight: bold;
+    padding: 4px 8px !important;
+    text-align: center;
+    /*border: 1px solid #D62159 !important;*/
+    border: none;
+    margin: 2px;
+    text-decoration: none;
+}
+
+.GridPagerTextBlock a, .GridPagerTextBlock input[type=button] {
+    color: #D62159;
+    background-color: white !important;
+    display: block !important;
+    font-weight: normal;
+    Font-Size: small;
+    font-style: normal;
+    padding: 4px 8px !important;
+    text-align: center;
+    border: 1px solid #D62159 !important;
+    margin: 2px;
+}
+
+.GridColumnLeft {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.GridColumnCenter {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Grids Lista de Datos con Wrap */
+
+.GridListaWrapable{
+    display: block;
+}
+
+.GridListaWrapableRow {
+    display: inline-block;
+}
+
+.GridListaWrapableItemStyle {
+    border-style: none;
+    width: 440px;
+    max-width: 440px;
+}
+
+.CellRowContent {
+    padding: 4px;
+    background-color: #EDF0F4;
+    font-family: Avenir-Light;
+}
+
+.CellDataHeader {
+    width: 100%;
+    background-color: #D62159;
+    color: white;
+    padding: 4px;
+    font-size: 21px;
+    height: 76px;
+}
+
+.CellDataHeaderRow2 {
+    font-size: 16px;
+}
+
+.CellDataValue {
+    font-size: 16px;
+    font-weight: bold;
+    color: #15181E;
+}
+
+.CellDataLabel {
+    font-size: 14px;
+    color: #A4A4A4;
+}
+
+.LittleVerticalMargin {
+    margin: 8px 0px 8px 0px;
+}
+
+.botonTopFlotanteWrapper {
+    position: relative;
+}
+
+.botonTopFlotante{
+    position: absolute;
+    right: 12%;
+    top: -64px;
+    margin-bottom: 0;
+    z-index: 2001;
+}
+
+.botonFlotante {
+    display: block;
+    position: fixed;
+    top: 80%;
+    right: 5%;
+}
+
+.botonAction {
+    border-radius: 10px;
+    background-color: #D62159;
+    color: white;
+    font-family: Avenir-Light;
+    font-weight: bold;
+    font-size: 16px;
+    height: auto;
+    width: auto;
+    padding: 8px 16px 8px 16px;
+    border-color: none !important;
+    box-shadow: none !important;
+    border-style: none;
+    cursor: pointer;
+}
+
+    .botonAction:disabled {
+        background-color: gray;
+    }
+
+.detailBotonAction {
+    border-radius: 20px;
+    background-color: #D62159;
+    color: white;
+    font-family: Avenir-Light;
+    font-weight: normal;
+    font-size: 16px;
+    height: auto;
+    width: auto;
+    padding: 8px 16px 8px 16px;
+    border-color: none !important;
+    box-shadow: none !important;
+    border-style: none;
+    cursor: pointer;
+}
+
+    .detailBotonAction:disabled {
+        background-color: gray;
+    }
+
+    .botonRegresar {
+        font-family: Avenir-Light;
+        font-size: 16px;
+        color: white;
+        background-color: #15181E;
+        padding: 12px 4px 12px 12px;
+        border-left-style: solid;
+        border-top-style: none;
+        border-bottom-style: none;
+        border-right-style: none;
+        border-left-color: white;
+        border-left-width: 1px;
+        margin-top: 24px;
+    }
+
+.miniBotonAction {
+    border-radius: 4px;
+    background-color: #D62159;
+    color: white;
+    font-family: Avenir-Light;
+    font-weight: bold;
+    font-size: 12px;
+    height: auto;
+    width: auto;
+    padding: 2px 4px 2px 4px;
+    border-color: none !important;
+    box-shadow: none !important;
+    border-style: none;
+}
+
+.cursorAdd {
+    cursor: copy;
+}
+
+.cursorHand {
+    cursor: pointer;
+}
+
+.DataFieldLabel {
+    font-family: Avenir-Light;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px;
+    background-color: #A4A4A4;
+    color: white;
+}
+
+.DataFieldText {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 4px;
+    background-color: transparent;
+    color: black;
+    border-style: none;
+}
+
+.DataFieldTextDisabled {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 4px;
+    background-color: #EDF0F4;
+    color: black;
+    min-width: 99%;
+    border-style: none;
+    text-align: center;
+}
+
+.SeccionPreguntasContent {
+    background-color: #D62159;
+    border-style: none;
+    padding: 8px;
+    margin: 4px 0px 4px 0px;
+}
+
+.SeccionPreguntasTag {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #A4A4A4;
+    color: white!important;
+    padding: 4px 8px 4px 8px;
+}
+
+/*a:-webkit-any-link {
+    color: white !important;
+}*/
+
+    .SeccionPreguntasName {
+        font-family: Avenir-Light;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        padding: 4px;
+    }
+
+.PreguntaContent {
+    background-color: white;
+    border-style: solid;
+    border-color: #EDF0F4;
+    padding: 4px;
+    margin: 8px 0px 8px 0px;
+}
+
+.PreguntaContentDisabled {
+    background-color: #A4A4A4;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.PreguntaTag {
+    font-family: Avenir-Light;
+    font-size: 12px;
+    background-color: #A4A4A4;
+    color: white;
+    padding: 4px 8px 4px 8px;
+}
+
+.PreguntaValue {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    color: #15181E;
+    padding: 4px;
+    border-color: transparent;
+    min-width: 98%;
+}
+
+.PreguntaLabel {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    color: #15181E;
+}
+
+.PreguntaType {
+    font-family: Avenir-Light;
+    font-size: 10px;
+    font-weight: normal;
+    color: #15181E;
+    border-color: transparent;
+}
+
+.PreguntaTypeItem {
+    font-family: Avenir-Light;
+    font-size: 24px;
+    font-weight: normal;
+    color: #15181E;
+    padding: 16px;
+    background-image: url("../Images/Add.png");
+    background-color: #A4A4A4;
+}
+
+.PreguntaConsecutive {
+    font-family: Avenir-Black;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #D62159;
+    /*border-style: solid;
+    border-color: transparent;
+    border-width: 16px;*/
+    padding: 10px;
+    /*list-style-image: url('../Images/arrow_up_24b.png');*/
+}
+
+.StarsLabel {
+    font-family: Avenir-Light;
+    font-size: 24px;
+    font-weight: bold;
+    color: #15181E;
+    background-color: white;
+    padding: 10px;
+}
+
+.TipoPreguntaMenuItem {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    width: 100%;
+    /*padding: -16px;*/
+    text-decoration: none;
+}
+
+.TipoPreguntaHoverItem {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    color: #EDF0F4;
+    background-color: #A4A4A4;
+    padding: 4px;
+}
+
+.TipoPreguntaSubMenuItem {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    color: black;
+    background-color: #EDF0F4;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.PreguntaValueSample {
+    font-family: Avenir-Light;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.PreguntaGetValuesContent {
+    background-color: white;
+    border-style: solid;
+    border-color: #A4A4A4;
+    border-width: 2px;
+    padding: 4px;
+    /*margin: 8px 0px 8px 0px;*/
+}
+
+.PreguntaGetValuesLabel {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    color: #15181E;
+}
+
+.PreguntaGetValues {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    color: #15181E;
+}
+
+select:disabled {
+    background-color: #A4A4A4;
+}
+
+.DetailPreguntaGetValuesLabel {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #D62159;
+    border-color: #D62159;
+    border-width: 2px;
+    border-style: solid;
+    padding: 4px 8px 4px 8px;
+}
+
+.DetailPreguntaGetValues {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    color: #15181E;
+    border-color: #EDF0F4;
+    border-width: 2px;
+    border-style: solid;
+    padding: 4px;
+}
+
+.DetailPreguntaGetLogoContent {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    color: #EDF0F4;
+    background-color: #EDF0F4;
+    border-color: #EDF0F4;
+    border-width: 2px;
+    border-style: solid;
+    padding: 8px;
+}
+
+.DetailPreguntaGetLogo {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    color: #EDF0F4;
+    background-color: #EDF0F4;
+    border-color: #A4A4A4;
+    border-width: 1px;
+    border-style: none;
+}
+
+.DetailPreguntaUploadLogo {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    font-weight: normal;
+    color: #15181E;
+    background-color: #EDF0F4;
+    border-color: #EDF0F4;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.DetailInfoLabel {
+    font-family: Avenir-Light;
+    font-size: 12px;
+    font-weight: normal;
+    color: #A4A4A4;
+    background-color: white;
+    border-style: none;
+    margin-top: 8px;
+}
+
+.DetailInfoData {
+    font-family: Avenir-LightOblique;
+    font-size: 12px;
+    font-weight: bold;
+    color: #15181E;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color: #15181E;
+    border-bottom-width: 1px;
+    padding: 4px;
+}
+
+.DetailInfoDataContent {
+    border-bottom-style: solid;
+    border-bottom-color: #15181E;
+    border-bottom-width: 1px;
+}
+
+.AnswerDesignContent {
+    background-color: white;
+    border-style: solid;
+    border-color: #EDF0F4;
+    padding: 16px;
+}
+
+.star-rating a {
+    display: inline-block;
+    padding-left: 32px;
+    background: url('../Images/empty_star_32.png') no-repeat 0 0;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.star-rating:hover a {
+    display: inline-block;
+    padding-left: 32px;
+    background: url('../Images/filled_star_32.png') no-repeat 0 0;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+    .star-rating:hover a:hover ~ a {
+        display: inline-block;
+        padding-left: 32px;
+        background: url('../Images/empty_star_32.png') no-repeat 0 0;
+        line-height: 32px;
+        text-decoration: none;
+    }
+
+.star-rating input {
+    display: inline-block;
+    padding-left: 32px;
+    background: url('../Images/empty_star_32.png') no-repeat 0 0;
+    line-height: 32px;
+    text-decoration: none;
+    border-style: solid;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+.star-rating:hover input {
+    display: inline-block;
+    padding-left: 32px;
+    background: url('../Images/filled_star_32.png') no-repeat 0 0;
+    line-height: 32px;
+    border-style: solid;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+    .star-rating:hover input:hover ~ input {
+        display: inline-block;
+        padding-left: 32px;
+        background: url('../Images/empty_star_32.png') no-repeat 0 0;
+        line-height: 32px;
+        border-style: solid;
+        border-color: transparent;
+        text-decoration: none;
+    }
+
+.SeccionPreguntasContentFooter {
+    background-color: #EDF0F4;
+    border-style: none;
+    padding: 12px 4px 12px 4px;
+    margin: -10px 0px 16px 0px;
+}
+
+.botonActionSeccion {
+    padding: 4px 8px 0px 0px;
+}
+
+.AlignMenuSeccion {
+    margin-top: -32px;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.MessageScreenContainer {
+    /*background-color: lightyellow;*/
+    height: auto;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    left: 0px;
+    background-color: #fff200;
+    color: white;
+}
+
+.MainMessageScreenContainer {
+    /*background-color: lightyellow;*/
+    position: fixed;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    left: 0px;
+    top: 140px;
+    background-color: #fff200;
+    color: white;
+    z-index: 2001;
+}
+
+.SurveyMessageScreenContainer {
+    /*background-color: lightyellow;*/
+    position: fixed;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    left: 0px;
+    top: 96px;
+    background-color: #fff200;
+    color: white;
+    z-index: 2001;
+}
+
+.MessageScreenContainerError {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    float: left;
+    top: 77px;
+    left: 6%;
+    max-width: 87%;
+    background-color: #f44336;
+    padding: 8px;
+    z-index: 2001;
+}
+
+.MessageScreen {
+    font-family: Avenir-LightOblique;
+    font-size: 20px;
+    /*padding-top: 10px;
+    padding-left: 0px;
+    text-align: left;*/
+    font-weight: bold;
+    /*font-style: italic;*/
+    color: blue;
+}
+
+.MessageScreenError {
+    padding-top: 10px;
+    padding-left: 0px;
+    text-align: left;
+    font-weight: bold;
+    /*font-style: italic;*/
+    font-size: 11px;
+    color: white;
+}
+
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #15181E;
+    z-index: 2010;
+    opacity: .6;
+    -moz-opacity: 0.6;
+    filter: alpha(opacity=60);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.modalBottom {
+    display: block;
+    position: fixed;
+    top: 84px;
+    left: auto;
+    width: 30%;
+    height: 30%;
+    padding: 4px;
+    background-color: #EFF4FA;
+    color: #333;
+    z-index: 2012;
+    overflow: auto;
+    /*border*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightslategray;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.modalCenter40variable {
+    display: block;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    padding: 4px;
+    background-color: #EFF4FA;
+    color: #333;
+    z-index: 2012;
+    overflow: auto;
+    /*border*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightslategray;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.modalCenter400fixed {
+    display: block;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    min-width: 400px;
+    height: auto;
+    /*min-height: 310px;*/
+    max-height: 60%;
+    padding: 4px;
+    background-color: #EFF4FA;
+    color: #333;
+    z-index: 2012;
+    overflow: auto;
+    /*border*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightslategray;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.modalCenter600fixed {
+    display: block;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    min-width: 600px;
+    height: auto;
+    /*min-height: 310px;*/
+    padding: 4px;
+    background-color: #EFF4FA;
+    color: #333;
+    z-index: 2012;
+    overflow: auto;
+    /*border*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightslategray;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: #15181E;
+    font-weight: bold;
+    float: right;
+    font-size: 42px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-color: transparent;
+    border-width: 0px;
+    background-color: transparent;
+}
+
+    .closebtn:hover {
+        color: #D62159;
+    }
+
+.WarningTitleContent {
+    background-color: #A4A4A4;
+    color: white;
+    padding: 4px 2px 4px 2px;
+}
+
+.WarningTitle {
+    font-family: Avenir-Light;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.WarningMessage {
+    font-family: Avenir-Light;
+    font-size: 16px;
+    color: #15181E;
+    width: 100%;
+    height: 100%;
+}
+
+.ButtonCompleteWide {
+    font-family: Avenir-Light;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 8px;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0px;
+    top: 0px;
+    border-style: none;
+    border-width: 0px;
+    background-color: #D62159;
+    margin: 4px 0px 4px 0px;
+}
+
+.ButtonCompleteWideAnswers {
+    font-family: Avenir-Black;
+    font-size: 28px;
+    font-weight: bold;
+    color: #D62159;
+    padding: 8px;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0px;
+    top: 0px;
+    border-style: none;
+    border-width: 4px;
+    border-color: #D62159;
+    margin: 4px 0px 4px 0px;
+    background-color: #15181E;
+    border-radius: 8px;
+}
+
+.ButtonCompleteWideAnswers:hover {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+    .showColorBackGray {
+        background-color: #EDF0F4;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #EDF0F4;
+    }
+
+.AnswerAlternateRow {
+    background-color: #EA8FAB;
+}
+
+.AvisoEncuestaNoDisponible {
+    font-family: Avenir-Light;
+    color: #D62159;
+    font-size: 28px;
+    background-color: white;
+    padding: 8px;
+    position: relative;
+    top: 28px;
+}
+
+
+
+.primero {
+    display: none;
+    /*padding: 5px;*/
+    border: 1px solid #ccc;
+    background-color: transparent;
+    /*position: relative;
+    width: 200px;*/
+}
+
+.segundo {
+    display: none;
+    /*padding: 5px;*/
+    border: 1px solid #ccc;
+    background-color: lightcoral;
+    /*position: relative;
+    width: 200px;*/
+}
+
+#segundo {
+    /*position: absolute;
+    top: 100px;*/
+    background-color: #f1f1f1;
+}
+/* Al pasar el mouse por encima del div mostramos el div con la
+		clase ".primero". Esta clase, tiene que estar dentro del id
+		"primero" para que pueda funcionar
+	 */
+#primero:hover .primero {
+    display: block;
+
+}
+
+#segundo:hover .segundo {
+    display: block;
+}
+
+
+
+.starRating input {
+    /*display: inline-block;*/
+    display: none;
+    padding-left: 32px;
+    background: url('../Images/empty_star_32.png') no-repeat 0 0;
+    line-height: 32px;
+    text-decoration: none;
+    border-style: none;
+}
+
+.starRating:hover input {
+    display: inline-block;
+    padding-left: 32px;
+    background: url('../Images/filled_star_32.png') no-repeat 0 0;
+    line-height: 32px;
+    border-style: none;
+}
+
+    /*#starRating:hover input:hover ~ input {
+        display: inline-block;
+        padding-left: 32px;
+        background: url('../Images/empty_star_32.png') no-repeat 0 0;
+        line-height: 32px;
+        border-style: none;
+    }*/
+
+
+.LayerDebajo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: green;
+    width: 600px;
+    height: 50px;
+    z-index: 2101;
+}
+
+.LayerArriba {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: yellow;
+    width: 150px;
+    height: 50px;
+    z-index: 2102;
+}
+
+    .LayerArriba:hover {
+        z-index: 2100;
+    }
+
+#pnlValoracion:hover .star-rating {
+    display: inline-block;
+}
+
+.starRatingValoracionLabel {
+    border: solid;
+    border-color: transparent;
+}
+
+.starRatingValoracion {
+    display: none;
+    /*padding: 5px;*/
+    border: solid;
+    background-color: transparent;
+    /*position: relative;
+    width: 200px;*/
+}
+
+#SurveyContent_grdPreguntas_pnlStarValoracionContent_000000:hover .starRatingValoracion {
+    display: inline-block;
+    /*position: absolute;
+    float: left;*/
+}
+
+div [id*="pnlStarValoracionContent"]:hover .starRatingValoracion {
+    display: inline-block;
+    /*position: absolute;
+    float: left;*/
+}
+
+div [id*="pnlStarValoracionContent"]:hover .starRatingValoracionLabel {
+    display: none;
+}
+
+
+.ReportContent {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ocultar {
+    /*display: none;*/
+    background-color: yellow;
+}

@@ -1,0 +1,563 @@
+﻿/*--------------------------------------------------------------------------------------------------------------------*/
+/*Fuentes*/
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('../fonts/Avenir-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('../fonts/Avenir-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir-LightOblique';
+    src: url('../fonts/Avenir-LightOblique.ttf') format('truetype');
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-image: url("../Images/FondoLogin.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.ImagenFondo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.DataContent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 0.5%;
+}
+
+.TitleContent {
+    background-color: transparent;
+    text-align: center;
+    padding: 12px;
+}
+
+.TitleLabel {
+    font-family: Avenir-Black   ;
+    font-size: 60px; /*80px;*/
+    color: white;
+}
+
+.InformacionContent {
+    background-color: transparent;
+    text-align: center;
+    padding: 4px;
+}
+
+.InformacionLabel {
+    font-family: Avenir-LightOblique;
+    font-size: 20px;
+    color: white;
+}
+
+.LogoStyleContent {
+    background-color: transparent;
+    padding: 8px;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.LogoStyle {
+    max-width: 400px;
+    max-height: 234px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.ImagenFondoDatosUsuario {
+    /*clear: left;
+    width: 100%;
+    height: 50%;*/
+}
+
+.DatosUsuarioBackFondo {
+
+   
+}
+
+.DatosUsuarioFowardFondo {
+
+    position: relative;
+    top: -580px;
+   
+}
+
+.DatosUsuarioFondo {
+    background-color: #D62159;
+    opacity: 0.8;
+    width: 92%;
+    margin: 2% 2% 2% 2%;
+    padding: 32px 8px 8px 8px;
+}
+
+.MarginDatosUsuarioArea {
+    width: 35%;
+}
+
+.DatosUsuarioContent {
+    border-radius: 2px;
+    background-color: white;
+    opacity: 0.5;
+    width: 30%;
+    border-color: #D62159;
+    border-width: 8px;
+    border-style: solid;
+}
+
+.DatosUsuarioContent2 {
+    border-radius: 2px;
+    border-color: #D62159;
+    border-width: 8px;
+    border-style: solid;
+    margin: 10%;
+    overflow: hidden;
+    min-width: 460px;
+}
+
+.DatosUsuarioContent3 {
+    float: left;
+    position: fixed;
+    border-radius: 2px;
+    background-color: white;
+    opacity: 0.5;
+    width: 100%;
+    height: 200px;
+    border-color: #D62159;
+    border-width: 8px;
+    border-style: solid;
+    z-index: 0;
+}
+
+.SubtitleStyleContent {
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.SubTitleStyle {
+    font-family: Avenir-Black;
+    color: white;
+    font-size: 24px; /*32px;*/
+    font-variant: small-caps;
+    /*background-color: transparent;*/
+    /*stroke*/
+    /*-webkit-text-fill-color: white;
+    -webkit-text-stroke: 0.5px gray;*/
+}
+
+.DatosUsuarioLabelContent {
+    text-align: left;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+.DatosUsuarioInputContent {
+    text-align: left;
+    padding: 4px;
+    width: 100%;
+    background-color: white;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+}
+
+.DatosUsuarioLabel {
+    font-family: Avenir-Light;
+    font-size: 30px; /*16px;*/
+    font-weight: bold;
+    color: black;
+}
+
+.DatosUsuarioInput {
+    font-family: Avenir-Light;
+    font-size: 24px; /*16px;*/
+    color: black;
+    border: none;
+    width: 100%;
+}
+
+.DatosUsuarioRowSeparate {
+    height: 12px;
+}
+
+.DatosUsuarioLabelSmall {
+    font-family: Avenir-LightOblique;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.DatosUsuarioInputSmall {
+    font-family: Avenir-LightOblique;
+    font-size: 14px;
+    color: black;
+    border: none;
+    width: 100%;
+}
+
+.MensajeCambioPassword {
+    font-family: Avenir-LightOblique;
+    font-size: 18px;
+    color: #f2692f;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.DatosUsuarioRowSeparateSmall {
+    height: 8px;
+}
+
+.DatosUsuarioButtonContent {
+    padding-right: 12px;
+}
+
+.DatosUsuarioButtonSize {
+}
+
+.DatosUsuarioLinkContent {
+    text-align: right;
+    vertical-align: text-top;
+}
+
+.DatosUsuarioLink, .a {
+    font-family: Avenir-Light;
+    font-size: 22px;
+    font-style: normal;
+    color: black;
+}
+
+a:link, a:visited,
+a:active, a:hover {
+    color: black;
+    font-style: normal;
+}
+
+a:hover {
+    background-color: #f2692f;
+    color: white;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.MessageStyle {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #EDF0F4;
+    text-align: left;
+}
+
+.CopyrightStyleContent {
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;
+    color: lightgray;
+    text-align: right;
+    width: 100%;
+}
+
+.CaptchaContent {
+    /*background-color: whitesmoke;*/
+    vertical-align: middle;
+    padding: 0px;
+    margin-top: -2px;
+    background-image: url("../Images/captcha_pattern.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.CaptchaImageBelow {
+    position: relative;
+    top:-5.5px;
+    /*left: -2px;*/
+}
+
+.CaptchaSolveImageBelow {
+    position: relative;
+    top:-5.5px;
+}
+
+.CaptchaSelectSolveContent {
+    text-align: center;
+    margin-top: -8px;
+    font-size: 8px;
+}
+
+.CaptchaImageSize {
+    height: 20px;
+    width: 40px;
+}
+
+.CaptchaRowBelow {
+    max-height: 16px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.FondoCaptcha {
+    background: linear-gradient(to right, lightgray, silver, slategray, dimgray, gray, darkgray, gray, dimgray );
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;
+    padding: 0;
+    text-align: right;
+}
+
+.TextoCaptcha {
+    color: black;
+    /*background-color: transparent;*/
+    font-family: Avenir-Light;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.ImagenRefrescaCaptcha {
+    float: left;
+    position: relative;
+    vertical-align: bottom;
+    margin: 12px;
+}
+
+table, td, th, tr {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-top: 0em;
+    border: 0px none;
+    padding: 2px 0px 0px 0px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .DatosUsuarioInput {
+        font-family: Avenir-Light;
+        font-size: 24px; /*16px;*/
+        color: black;
+        border: none;
+        width: 95%;
+    }
+
+    .MarginDatosUsuarioArea {
+        width: 20%;
+    }
+
+    .DatosUsuarioContent {
+
+        border-radius: 2px;
+        background-color: white;
+        opacity: 0.4;
+        width: 60%;
+    }
+
+    .MiddleModalAuto{
+         display: block;
+         position: fixed;
+         top: 10%;
+         left: 5%;
+         width: 90%;
+         height: auto;
+         padding: 0px;
+         z-index: 1012;
+         overflow: auto;
+
+         background-color: white;
+        color: black;
+
+        /*border*/
+        border-style: none;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+
+    }
+
+    .MiddleModalAutoMaxHeight {
+        max-height: 100px;
+    }
+
+    .DatosUsuarioButtonSize {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.overlay{
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 300%;
+     max-height: 100%;
+     background: #000;
+     z-index:1010;
+     opacity:.6;
+     -moz-opacity: 0.6;
+     filter: alpha(opacity=60);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.MiddleModalAuto{
+     display: block;
+     position: fixed;
+     top: 20%;
+     left: 25%;
+     width: 50%;
+     height: auto;
+     padding: 0px;
+     z-index: 1012;
+     overflow: auto;
+
+     background-color: white;
+    color: black;
+
+    /*border*/
+    border-style: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+}
+
+.ModalTitleContainer {
+    background: linear-gradient(to right, #f2692f, #f18f3b, #f2b63d);
+    border-style: none;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Arial;
+    padding-left: 4px;
+    height: 32px;
+}
+
+.ModalMessageContainer {
+    background: transparent;
+    border-style: none;
+    color: #f2692f;
+    font-size: 14px;
+    font-family: Verdana, Arial;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+.MessageScreenContainer{
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+    z-index: 1000!important;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.MessageScreen{
+    padding-top: 10px;
+    padding-left: 0px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    color: darkred;
+    font-family: Avenir-Light;
+}
+
+.ButtonBlue{
+    color: white;
+    background-color: royalblue;
+    border-color: royalblue;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    border-radius: 4px;
+    height:32px;
+}
+
+.ButtonBlue:hover{
+    background-color: CornflowerBlue; /*#A0CAF1;*/
+    border-color: CornflowerBlue;
+    /*font-weight: bolder;*/
+}
+
+.MiddleModalAutoMaxHeight {
+    max-height: 200px;
+}
+
+.ListaLogos {
+    text-align: center;
+    width: 100%;
+}
+
+.ListaLogosContent {
+    float: left;
+    position: relative;
+    display: block;
+    width: 128px;
+    text-align: center;
+}
+
+.ListaLogosLabelContent{
+    border-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 4px;
+}
+
+.ListaLogosImageContent{
+    border-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 4px;
+}
+
+.ListaLogosImageContent:hover{
+    background-color: #f2b63d;
+}
+
+.ListaLogosLabel{
+    color: black;
+    font-size: 12px;
+    font-family: Verdana, Arial;
+    text-align: center;
+}
+
+.ListaLogosSubtitle{
+    color: #f2692f;
+    font-size: 14px;
+    font-family: Verdana, Arial;
+    text-align: center;
+}
+
+.ListaLogosSubtitleContent{
+    text-align: center;
+    width: 100%;
+}
+
